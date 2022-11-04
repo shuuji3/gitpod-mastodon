@@ -37,7 +37,7 @@ tasks:
       RAILS_ENV=production bundle exec rake mastodon:webpush:generate_vapid_key >> .env.production
       RAILS_ENV=production rails db:setup
       RAILS_ENV=production rails assets:precompile
-      RAILS_ENV=production bin/tootctl accounts create a --email "admin@$(gp url 8080 | cut -d/ -f3)" --confirmed --role admin
+      RAILS_ENV=production bin/tootctl accounts create a --email "admin@$(gp url 8080 | cut -d/ -f3)" --confirmed --role Admin
       cd ..
       gp sync-done init
     command: |
