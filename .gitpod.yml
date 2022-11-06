@@ -37,6 +37,7 @@ tasks:
       RAILS_ENV=production rails db:setup
       RAILS_ENV=production rails assets:precompile
       RAILS_ENV=production bin/tootctl accounts create a --email "admin@$(gp url 8080 | cut -d/ -f3)" --confirmed --role Owner
+      echo "E-mail address: admin@$(gp url 8080 | cut -d/ -f3)"
       cd ..
       gp sync-done init
     command: |
