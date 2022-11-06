@@ -31,7 +31,6 @@ tasks:
       yarn install
       echo "LOCAL_DOMAIN=$(gp url 8080 | cut -d/ -f3)" > .env.production
       cat ../.env.production.example >> .env.production
-      echo "SMTP_FROM_ADDRESS=notifications@$(gp url 8080 | cut -d/ -f3)" >> .env.production
       echo "SECRET_KEY_BASE=$(RAILS_ENV=production bundle exec rake secret)" >> .env.production
       echo "OTP_SECRET=$(RAILS_ENV=production bundle exec rake secret)" >> .env.production
       RAILS_ENV=production bundle exec rake mastodon:webpush:generate_vapid_key >> .env.production
