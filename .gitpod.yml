@@ -5,7 +5,7 @@ tasks:
     init: gp sync-await init
     command: |
       cd mastodon
-      NODE_ENV=production BIND=0.0.0.0 PORT=8008 node ./streaming
+      NODE_ENV=production BIND=0.0.0.0 PORT=8008 STREAMING_CLUSTER_NUM=1 node ./streaming
   - name: sidekiq
     before: |
       gp sync-await before
