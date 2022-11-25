@@ -18,7 +18,7 @@ tasks:
     before: |
       mkdir -p /workspace/.rvm
       rvm install 3.0.4
-      brew install libidn redis
+      brew install --ignore-dependencies libidn redis
       if [ -z "$GITTAG" ]; then export GITTAG=main; fi
       gp sync-done before
     init: |
