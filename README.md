@@ -5,7 +5,7 @@ Forked from the upstream GitLab repository: https://gitlab.com/acefed/gitpod-mas
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#GITTAG=main/https://gitlab.com/acefed/gitpod-mastodon)
 ## Usage for the frontend development
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#GITTAG=main/https://gitlab.com/acefed/gitpod-mastodon)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#GITTAG=main/https://github.com/shuuji3/gitpod-mastodon)
 
 - Edit frontend codes
 - Run the build command for`yarn build:production`
