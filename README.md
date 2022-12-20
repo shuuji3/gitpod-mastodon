@@ -7,7 +7,7 @@ Forked from the upstream GitLab repository: https://gitlab.com/acefed/gitpod-mas
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#GITTAG=main/https://github.com/shuuji3/gitpod-mastodon)
 
-- Login username and pass is shown in the log text in the web service
+- Login username and pass can be found in the log text in the web service
 - Edit frontend codes
 - Run the build command for`yarn build:production`
 - Restart the web server with the command:
