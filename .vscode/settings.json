@@ -1,13 +1,9 @@
 {
-    "sqltools.connections": [
-        {
-            "name": "PGSQL",
-            "driver": "PostgreSQL",
-            "server": "127.0.0.1",
-            "port": 5432,
-            "database": "postgres",
-            "username": "gitpod",
-            "password": null
-        }
-    ]
+  "sqltools.connections": [
+    {
+      "name": "PGSQL",
+      "driver": "PostgreSQL",
+      "connectString": "postgresql://gitpod@127.0.0.1:5432/postgres?sslmode=disable"
+    }
+  ]
 }

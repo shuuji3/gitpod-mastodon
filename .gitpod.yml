@@ -1,7 +1,9 @@
 image: gitpod/workspace-postgres
 tasks:
   - name: streaming
-    before: gp sync-await before
+    before: |
+      gp sync-await before
+      export DATABASE_URL=postgresql://gitpod@127.0.0.1:5432/postgres?sslmode=disable
     init: gp sync-await init
     command: |
       cd mastodon
@@ -9,6 +11,7 @@ tasks:
   - name: sidekiq
     before: |
       gp sync-await before
+      export DATABASE_URL=postgresql://gitpod@127.0.0.1:5432/postgres?sslmode=disable
       redis-server --daemonize yes
     init: gp sync-await init
     command: |
@@ -17,6 +20,7 @@ tasks:
   - name: web
     before: |
       mkdir -p /workspace/.rvm
+      export DATABASE_URL=postgresql://gitpod@127.0.0.1:5432/postgres?sslmode=disable
       rvm install 3.0.4
       brew install --ignore-dependencies libidn redis
       if [ -z "$GITTAG" ]; then export GITTAG=main; fi
