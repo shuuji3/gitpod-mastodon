@@ -22,7 +22,7 @@ tasks:
       mkdir -p /workspace/.rvm
       export DATABASE_URL=postgresql://gitpod@127.0.0.1:5432/postgres?sslmode=disable
       rvm install 3.0.4
-      brew install --ignore-dependencies libidn redis
+      brew install libidn redis
       if [ -z "$GITTAG" ]; then export GITTAG=main; fi
       gp sync-done before
     init: |
