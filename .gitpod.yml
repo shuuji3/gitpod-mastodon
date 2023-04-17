@@ -39,7 +39,7 @@ tasks:
       echo "OTP_SECRET=$(RAILS_ENV=production bundle exec rake secret)" >> .env.production
       RAILS_ENV=production bundle exec rake mastodon:webpush:generate_vapid_key >> .env.production
       RAILS_ENV=production rails db:setup
-      RAILS_ENV=production rails assets:precompile
+      RAILS_ENV=production NODE_OPTIONS='--openssl-legacy-provider' rails assets:precompile
       RAILS_ENV=production bin/tootctl accounts create a --email "admin@$(gp url 8080 | cut -d/ -f3)" --confirmed --role Owner
       echo "E-mail address: admin@$(gp url 8080 | cut -d/ -f3)"
       cd ..
