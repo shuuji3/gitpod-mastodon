@@ -53,6 +53,7 @@ tasks:
       cd mastodon/
       echo "E-mail address: admin@$(gp url 8080 | cut -d/ -f3)"
       RAILS_ENV=development bin/tootctl accounts modify admin --reset-password
+      RAILS_ENV=development bin/tootctl accounts approve admin
 ports:
   - port: 8080
     visibility: public
