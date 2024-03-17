@@ -4,17 +4,17 @@ Forked from the upstream GitLab repository: https://gitlab.com/acefed/gitpod-mas
 
 ## Open in GitPod
 
-### Latest `main` branch
+### `v4.2.8`
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#GITTAG=v4.2.8/https://github.com/shuuji3/gitpod-mastodon)
+
+https://gitpod.io/new/#GITTAG=v4.2.8/https://github.com/shuuji3/gitpod-mastodon
+
+### Latest `main` branch (unstable)
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#GITTAG=main/https://github.com/shuuji3/gitpod-mastodon)
 
 (https://gitpod.io/#GITTAG=main/https://github.com/shuuji3/gitpod-mastodon)
-
-### `v4.2.8`
-
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#GITTAG=v4.2.8/main/https://github.com/shuuji3/gitpod-mastodon)
-
-https://gitpod.io/new/#GITTAG=v4.2.8/https://github.com/shuuji3/gitpod-mastodon
 
 ## Usage for the frontend development
 
