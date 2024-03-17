@@ -46,9 +46,9 @@ tasks:
       cd mastodon/
       RAILS_ENV=development BIND=0.0.0.0 PORT=8080 RAILS_SERVE_STATIC_FILES=true bundle exec puma -C config/puma.rb
   - name: admin account
+    before: gp sync-await before
+    init: gp sync-await init
     command: |
-      gp sync-await init
-      gp sync-await before
       cd mastodon/
       echo "E-mail address: admin@$(gp url 8080 | cut -d/ -f3)"
       RAILS_ENV=development bin/tootctl accounts modify admin --reset-password
